@@ -1,0 +1,273 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  margin-left: 95%;
+  padding: 8px;
+  background-color: white;
+  color: #053F62;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip .tooltiptext {
+  top: -0px;
+  right: 104%;
+}
+
+.nav .aaa{
+cursor: pointer;
+display: flex;
+justify-content: center;
+border-style: none;
+width: 30px;
+margin-left: 96%;
+padding: 8px;
+background-color: #053F62;
+/* font-size: px; */
+flex-wrap: wrap;
+border-radius: 5px
+}
+
+.aaa .bi{
+font-size: 20px;
+}
+
+.nav  .aaa{
+text-decoration: none;
+color: white;
+}
+
+.nav .aaa:hover{
+  transition: all 500ms ease;
+  background-color:#3d86bd;
+  color: white;
+  }
+
+/*Navbar Completo*/
+.navbar{
+ 
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 20;
+    margin-bottom: 10px;
+  }
+  .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      box-shadow: 0 4px 4px 0 rgba(0,0,0,.2);
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+  }
+  
+  .nav-menu li {
+      float: left;
+      width: 25%;
+  }
+  
+  .nav-menu li a {
+      display: block;
+      color: #0e5c83;
+      font-weight: bold;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      height: 3em;
+      padding-top: 40px;
+      
+      
+  }
+  
+  .nav-menu li a:hover {
+      background-color: #053F62;
+      color:white;
+  }
+  
+  .logo{
+      display:block;
+      margin: 0px auto;
+      height: 10em;
+      z-index: 99;
+      margin-top: -5em;
+      filter:drop-shadow(5px 6px 5px rgba(0, 0, 0, 0.7));
+  }
+  
+  
+  /* TOGGLE */
+  .nav-toggle {
+      color: #053F62;
+      background: none;
+      border: 2px solid #053F62;
+      font-size: 40px;
+      padding: 10px 10px;
+      line-height: 0px;
+      cursor: pointer;
+      display: none;
+      top: 10px;
+      margin-top: 30px;
+      margin-left: 15px;
+    }
+
+    .pie-pagina2-button{
+      margin-left: -90%;
+      margin-block: -2%;
+      width: 65px;
+      height: 30px;
+      font-size: 20px;
+  }
+
+    /* RESPONSIVE MOBILE NAVBAR*/
+  @media (max-width: 940px) {
+    
+  
+  .nav-menu .aaa{
+   margin-left: -10px;
+ color: white;
+ display: inline-table;
+ width: 100%;
+ font-size: 20px;
+ background-color:#053F62 ;
+ text-align: center;
+}
+
+.nav-menu  .aaa:hover {
+  background-color:#0e5c83; 
+}
+
+
+    .header {
+      height: 60px;
+    }
+  
+    .logo {
+      height: 7em;
+    margin-top: -4.4em;
+    z-index: 99;
+    }
+  
+    .nav-menu {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      background-color: #053F62;
+      position: fixed;
+      top: 5em;
+      width: 101%;
+      height: calc(100% - 60px);
+      overflow-y: auto;
+      left: 100%;
+      transition: left 0.3s;
+      
+    }
+
+    .navbar ul{
+      padding-top: 40px;
+    }
+    
+    .nav-menu li{
+      width: 100%;
+    }
+    .nav-menu li a {
+
+        color: white;
+        width: 100%;
+    height: 2em;
+    padding: 0;
+    display: inline-table;
+        
+    }
+
+    .nav-menu li a:hover {
+        background-color:#0e5c83; 
+    }
+  
+    .nav-menu-item {
+      line-height: 70px;
+    }
+  
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+      background: none;
+      color: #83c5f7;
+    }
+  
+    .nav-toggle {
+      display: block;
+    }
+  
+    .nav-menu_visible {
+      left: 0;
+    }
+  
+    .nav-toggle:focus:not(:focus-visible) {
+      outline: none;
+    }
+  }
+
+  h1{
+    font-family: 'Bangers', cursive;
+  }
+
+  /* .bott{
+    margin-top: 18px ;
+    padding-bottom: 40px;
+  } */
+
+
+  .texto{
+  position: absolute;
+  top: 30%;
+  padding: 2%;
+  border-radius: 10px;
+  left: 10%;
+  background-color: rgba(255, 255, 255, 0.387);
+  }
+
+  .texto p{
+    font-size: 40px;
+    color: white;
+  }
+
+@media   (min-width: 350px) and (max-width: 720px){
+  .tooltip{
+    margin-left: 88%;
+  }
+}
+  
+
