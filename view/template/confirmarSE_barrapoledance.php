@@ -17,6 +17,7 @@ if ($_POST['codigo'] == "") {
   exit();
 }
 
+
 if (isset($_POST['reservar'])) {
   $correo = $_POST['correo'];
   $telefono = $_POST['telefono'];

@@ -83,7 +83,7 @@ $query = mysqli_query($con, $sql);
             <tr>
               <th scope="col">Correo</th>
               <th scope="col">Telefono</th>
-              <th scope="col">Fecha registro</th>
+              <th scope="col">Fecha</th>
               <th scope="col">Estadia</th>
               <th scope="col">Habitacion</th>
               <th scope="col">Precio</th>
@@ -109,23 +109,21 @@ $query = mysqli_query($con, $sql);
                 date_default_timezone_set('America/Bogota');
                 $id_reserva = $row['id_reserva'];
                 $no_habitacion = $row['no_habitacion'];
+                $correo = $row['correo'];
+                $fecha_actual = strtotime(date("Y-m-d H:i:s"));
 
-                $fecha_actual= strtotime(date("Y-m-d H:i:s"));
-                
                 $fecha_inicio = $row['fecha_ingreso'];
-                $fecha_limite = date('Y-m-d H:i:s', strtotime($fecha_inicio . '+2 minute'));
-                print_r($fecha_limite);
+                $fecha_limite = date('Y-m-d H:i:s', strtotime($fecha_inicio . '+30 second'));
 
-                if (strtotime($fecha_limite) < $fecha_actual){
+                if (strtotime($fecha_limite) < $fecha_actual) {
                   $v = "UPDATE usuarios SET reserva_programada='Cancelada' WHERE id_reserva='$id_reserva'";
                   $result = mysqli_query($con, $v);
                   $sql = "UPDATE habitaciones SET bandera=0 WHERE no_habitacion='$no_habitacion'";
-                  $result = mysqli_query($con, $sql);
-                }else{
+                  $result = mysqli_query($con, $sql); 
+                } else {
                   echo "";
                 }
                 ?>
-
                 <td><?php echo $row['tiempo_estadia'] ?></td>
                 <td><?php echo $row['nombre_habitacion'] ?></td>
                 <td><?php echo ('$ '), $row['precio'] ?></td>

@@ -16,10 +16,6 @@ $query = mysqli_query($con, $sql);
   <link rel="stylesheet" href="../../css/footer.css">
   <script src="https://kit.fontawesome.com/84fcd47960.js" crossorigin="anonymous"></script>
 
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <script src="https://kit.fontawesome.com/84fcd47960.js" crossorigin="anonymous"></script> -->
-
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <!-- CSS personalizado -->
@@ -67,6 +63,7 @@ $query = mysqli_query($con, $sql);
             <tr>
               <th scope="col">Correo</th>
               <th scope="col">Telefono</th>
+              <th scope="col">Fecha</th>
               <th scope="col">Estadia</th>
               <th scope="col">Habitacion</th>
               <th scope="col">Precio</th>
@@ -83,6 +80,7 @@ $query = mysqli_query($con, $sql);
               <tr class="text-center">
                 <td><?php echo $row['correo'] ?></td>
                 <td><?php echo $row['telefono'] ?></td>
+                <td><?php echo $row['fecha_ingreso'] ?></td>
                 <td><?php echo $row['tiempo_estadia'] ?></td>
                 <td><?php echo $row['nombre_habitacion'] ?></td>
                 <td><?php echo ('$ '), $row['precio'] ?></td>

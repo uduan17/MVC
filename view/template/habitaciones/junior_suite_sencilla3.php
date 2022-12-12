@@ -51,8 +51,8 @@ $id=$resultado->fetch_all();
 <center>
   <div class="fotos table-responsive-lg d-flex">
       <img src="../habitaciones/IMG/junior suite3.jpg" class="p-1" style="width: 200%; height:300px; border-radius:8px;">
-      <img src="../habitaciones/IMG/junior suite4.jpg" class="p-1" style="width: 200%; height:300px; border-radius:8px;">
-      <img src="../habitaciones/IMG/junior suite5.jpg"   class="p-1" style="width: 200%; height:300px; border-radius:8px;">
+      <img src="../habitaciones/IMG/junior suite4.jpg" class="p-1" style="width: 32%; height:300px; border-radius:8px;">
+      <img src="../habitaciones/IMG/junior suite5.jpg"   class="p-1" style="width: 33%; height:300px; border-radius:8px;">
   </div>
   </center>
 
@@ -155,7 +155,7 @@ $id=$resultado->fetch_all();
           <form action="../confirmarJ3.php" method="post">
             <center>
               <input type="email" formnovalidate placeholder="Correo" name="correo" required class="input_select">
-              <input type="number" placeholder="Telefono" name="telefono" required maxlength="10" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" class="input_select" onkeypress="return solonumeros(event)">
+              <input type="tel" placeholder="Telefono-celular" name="telefono" required pattern="[0-9]{10}" class="input_select">
               <input style="display: none;" type="datetime" name="fecha_ingreso" value="<?php 
               date_default_timezone_set('America/Bogota');  echo 
               date("Y-m-d H:i:s a"); ?>">

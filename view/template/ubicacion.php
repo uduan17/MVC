@@ -33,12 +33,8 @@
 <body>
   <!--TITULO-->
   <div class="titulo">
-    <br>
-    <br>
     <h1 class="h1">Ubicación</h1>
   </div>
-
- 
 
   <div class="mapa">
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5629.502559447076!2d-77.02460710439865!3d3.88298316447483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3724a87dd9f103%3A0x8de4ad1a896ffa35!2sMotel%20Sol%20y%20Luna!5e0!3m2!1ses!2sco!4v1647435019824!5m2!1ses!2sco" style="border:0;" allowfullscreen="" loading="lazy"></iframe>

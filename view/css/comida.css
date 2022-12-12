@@ -198,11 +198,10 @@
        
        
        .caja1{
-       
            color: floralwhite;
            /* font-size: 20px; */
            text-align: center;
-           background-image: url(https://images.pexels.com/photos/10134737/pexels-photo-10134737.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+           background-image: url(../img/comidas.jpg);
            background-repeat: no-repeat;
            background-size: cover;
            background-position: center;
@@ -218,7 +217,7 @@
          /* font-size: 20px; */
          text-align: center;
          font-weight: 30px;
-         background-image: url(https://images.pexels.com/photos/10998462/pexels-photo-10998462.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+         background-image: url(../img/comidas1.jpg);
          background-repeat: no-repeat;
          background-size: cover;
          background-position: center;
@@ -231,7 +230,7 @@
            font-family: Verdana, Geneva, Tahoma, sans-serif;
            /* font-size: 20px; */
            text-align: center;
-           background-image: url(https://images.pexels.com/photos/6529785/pexels-photo-6529785.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+           background-image: url(../img/desayunos.jpg);
            background-position: center;
            background-repeat: no-repeat;
            background-size: cover;
@@ -243,7 +242,7 @@
            color: floralwhite;
            font-size: 20px;
            text-align: center;
-           background-image: url(https://images.pexels.com/photos/340996/pexels-photo-340996.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+           background-image: url(../img/alcohol.jpg);
            background-repeat: no-repeat;
            background-size: cover;
            background-position: center;
@@ -255,7 +254,7 @@
            color: floralwhite;
            font-size: 20px;
            text-align: center;
-           background-image: url(https://images.pexels.com/photos/5218014/pexels-photo-5218014.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+           background-image: url(../img/aseo.jpg);
            background-repeat: no-repeat;
            background-size: cover;
            background-position: center;
@@ -267,7 +266,7 @@
            color: floralwhite;
            font-size: 20px;
            text-align: center;
-           background-image: url(https://images.pexels.com/photos/205961/pexels-photo-205961.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+           background-image: url(../img/mecato.jpg);
            background-repeat: no-repeat;
            background-size: cover;
            background-position: center;

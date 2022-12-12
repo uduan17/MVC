@@ -64,9 +64,9 @@ $n_h = $_GET['nh'];
   <!--SERVICIOS-->
 <center>
   <div class="fotos table-responsive-lg d-flex">
-    <img src="../habitaciones/IMG/suite especial8.jpg" class="p-1" style="width: 200%; height:300px; border-radius:8px;">
-      <img src="../habitaciones/IMG/suite especial7.jpg" class="p-1" style="width: 200%; height:300px; border-radius:8px;">
-      <img src="../habitaciones/IMG/Img1.jpg" class="p-1" style="width: 440px; height:300px; border-radius:8px;">
+    <img src="../habitaciones/IMG/suite especial8.jpg" class="p-1" style="width: 32%; height:300px; border-radius:8px;">
+      <img src="../habitaciones/IMG/suite especial7.jpg" class="p-1" style="width: 33%; height:300px; border-radius:8px;">
+      <img src="../habitaciones/IMG/Img1.jpg" class="p-1" style="width: 34%; height:300px; border-radius:8px;">
   </div>
   </center>
   <div class="container1 flex-wrap">
@@ -166,7 +166,7 @@ $n_h = $_GET['nh'];
           <form action="../confirmarJ2.php" method="post">
             <center>
               <input type="email" formnovalidate placeholder="Correo" name="correo" required class="input_select">
-              <input id="tel" type="number" placeholder="Telefono" name="telefono" required maxlength="10" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" class="input_select" onkeypress="return solonumeros(event)">
+              <input type="tel" placeholder="Telefono-celular" name="telefono" required pattern="[0-9]{10}" class="input_select">
               <input style="display: none;" type="datetime" name="fecha_ingreso" value="<?php date_default_timezone_set('America/Bogota');  echo date("Y-m-d H:i:s a"); ?>">
               <input type="hidden" name="id_habitacion"  value="<?php echo $id[0][0]; ?>">
               <input type="hidden" name="reserva_programada" value="Reserva programada" />
